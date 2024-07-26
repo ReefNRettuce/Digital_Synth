@@ -1,10 +1,10 @@
 # Digital_Synth
 
 
-# the purpose of this is to provide an overview of the system, show design decisions, and troubleshooting. 
+## the purpose of this is to provide an overview of the system, show design decisions, and troubleshooting. 
 
-# Overview
+## Overview
 
-# Design Decisions 
+## Design Decisions 
 
-# Troubleshooting & Testings
+## Troubleshooting & Testings
