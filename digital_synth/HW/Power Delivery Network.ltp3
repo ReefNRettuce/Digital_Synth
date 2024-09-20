@@ -1,0 +1,387 @@
+<Vers> 3.6.8
+<Tabs> 1, #FFFDF5E6, New Tab 1
+<Summ> 0, 0, 24, #FF000000, #00FFFFFF
+<BPrt> Load, 32, 1220, 170, CS4272
+	Color   : #FFFFB6C1
+	Width   : 290
+	Height  : 100
+	VisType : 2
+<Term> Input, 1
+	InomU   : -3
+	IpeakU  : -3
+	Title   : Digital Logic 5V
+<Term> Input, 2
+	InomU   : -3
+	IpeakU  : -3
+	Title   : Analog Logic 3V3
+<BPrt> Load, 33, 1220, 280, MCU
+	Color   : #FFFFB6C1
+	Width   : 290
+	Height  : 80
+	VisType : 2
+<Term> Input, 1
+	Inom    : 100
+	InomU   : -3
+	Ipeak   : 200
+	IpeakU  : -3
+	Title   : Digital Supply 3.3V
+<BPrt> Load, 34, 1220, 375, CP2012
+	Color   : #FFFFB6C1
+	Width   : 290
+	Height  : 70
+	VisType : 2
+<Term> Input, 1
+	Inom    : 9.5
+	InomU   : -3
+	IpeakU  : -3
+	Title   : Supply 5V
+<BPrt> Load, 37, 1220, 475, op-amp
+	Color   : #FFFFB6C1
+	Width   : 290
+	Height  : 120
+	VisType : 2
+<Term> Input, 1
+	InomU   : -3
+	Ipeak   : 30
+	IpeakU  : -3
+	Title   : Op-Amp Pos 15
+<Term> Input, 2
+	InomU   : -3
+	Ipeak   : 30
+	IpeakU  : -3
+	LoadType: False
+	Title   : Op-Amp Neg 15
+<BPrt> Converter, 38, 590, 290, CONV 24-15
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+	VinMin  : 20
+	VinMax  : 24
+<Term> Output, 1
+	Vout    : 15
+	VoutMin : 14.5
+	VoutMax : 17
+	IoutMax : 2
+<BPrt> Converter, 40, 590, 420, CONV 24-15
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	PartNumb: LT8618
+	Topology: 1
+	ConvType: 1
+	VisType : 1
+<Term> Input, 1
+	VinMin  : 6.2
+	VinMax  : 42
+<Term> Output, 1
+	Vout    : 4.938
+	VoutMin : 0.8
+	VoutMax : 60
+	Dropout : 0
+	IoutMin : 0
+	IoutMax : -0.1
+	MatrixA : 2.7173052645, 0.0158947576, 0.0198206759
+<BPrt> Converter, 41, 795, 290, Converter 41
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+	VinMin  : 14
+<Term> Output, 1
+	Vout    : 5
+	VoutMin : 4.5
+	VoutMax : 5.5
+	IoutMax : 1
+<BPrt> LDO, 42, 965, 290, LDO 5V-3.3
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+	VinMin  : 5
+	VinMax  : 5.5
+<Term> Output, 1
+	Vout    : 3.3
+	VoutMin : 3
+	VoutMax : 4
+	IoutMax : 1
+<BPrt> Power, 58, 410, 380, Power 58
+	Color   : #00FFFFFF
+	Width   : 80
+	Height  : 60
+	VisType : 1
+<Term> Output, 1
+	Vout    : 24
+	VoutMin : 20
+	VoutMax : 28
+<Symb> SummaryReport, 0, 0, 0, 0,0, 0,0
+	Color   : #FF000000
+	Color2  : #00FFFFFF
+	Thicknss: 24
+<Wire> 44, 43
+	ZIndex  : -1
+	STermPID: 40
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 37
+	ETermTyp: Input
+	ETermNum: 2
+	Points  : (710,450)(875,450)(875,565)(1220,565)
+<Wire> 46, 45
+	ZIndex  : -1
+	STermPID: 37
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 47, 48
+	Points  : (1220,505)(915,505)(915,410)(745,410)(745,320)
+<Wire> 47, 45
+	ZIndex  : -1
+	STermPID: 41
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 46, 48
+	Points  : (795,320)(745,320)
+<Wire> 48, 45
+	ZIndex  : -1
+	ETermPID: 38
+	ETermTyp: Output
+	ETermNum: 1
+	SWires  : 47, 46
+	Points  : (745,320)(710,320)
+<Wire> 50, 49
+	ZIndex  : -1
+	STermPID: 41
+	STermTyp: Output
+	STermNum: 1
+	EWires  : 52, 53, 62
+	Points  : (915,320)(945,320)
+<Wire> 52, 49
+	ZIndex  : -1
+	ETermPID: 42
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 50, 53, 62
+	Points  : (945,320)(965,320)
+<Wire> 53, 49
+	ZIndex  : -1
+	STermPID: 34
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 52, 50, 62
+	Points  : (1220,410)(945,410)(945,320)
+<Wire> 55, 54
+	ZIndex  : -1
+	STermPID: 33
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 63, 64
+	Points  : (1220,320)(1155,320)
+<Wire> 60, 59
+	ZIndex  : -1
+	STermPID: 58
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 40
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 61
+	Points  : (490,410)(490,450)(590,450)
+<Wire> 61, 59
+	ZIndex  : -1
+	STermPID: 38
+	STermTyp: Input
+	STermNum: 1
+	ETermPID: 58
+	ETermTyp: Output
+	ETermNum: 1
+	EWires  : 60
+	Points  : (590,320)(490,320)(490,410)
+<Wire> 62, 49
+	ZIndex  : -1
+	STermPID: 32
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 52, 53, 50
+	Points  : (1220,195)(945,195)(945,320)
+<Wire> 63, 54
+	ZIndex  : -1
+	STermPID: 32
+	STermTyp: Input
+	STermNum: 2
+	EWires  : 55, 64
+	Points  : (1220,245)(1155,245)(1155,320)
+<Wire> 64, 54
+	ZIndex  : -1
+	ETermPID: 42
+	ETermTyp: Output
+	ETermNum: 1
+	SWires  : 63, 55
+	Points  : (1155,320)(1085,320)
+<Tabs> 2, #FFFDF5E6, New Tab 2
+<Summ> 0, 0, 24, #FF000000, #00FFFFFF
+<BPrt> Converter, 1, 455, 210, Converter 1
+	Color   : #FFFFDAB9
+	Width   : 140
+	Height  : 140
+	VisType : 1
+<Term> Input, 1
+	VinMin  : 12
+	VinMax  : 24
+<Term> Output, 1
+	Vout    : 15
+	VoutMin : 12
+	VoutMax : 17
+	IoutMax : 1
+	NomEff  : 75
+<Term> Output, 2
+	Vout    : 15
+	VoutMin : 12
+	VoutMax : 17
+	IoutMax : -1
+	NomEff  : 75
+<Term> Output, 3
+	Vout    : 5
+	VoutMin : 4.5
+	VoutMax : 5.5
+	IoutMax : 0.8
+	NomEff  : 75
+<Term> Output, 4
+	Vout    : 3.3
+	VoutMin : 3
+	VoutMax : 4
+	IoutMax : 2
+	NomEff  : 75
+<BPrt> Power, 2, 310, 250, Power 2
+	Color   : #00FFFFFF
+	Width   : 80
+	Height  : 60
+	VisType : 1
+<Term> Output, 1
+	Vout    : 24
+	VoutMin : 24
+	VoutMax : 24
+	IoutMax : 2
+<BPrt> Load, 32, 730, 240, CS4272
+	Color   : #FFFFB6C1
+	Width   : 290
+	Height  : 100
+	VisType : 2
+<Term> Input, 1
+	InomU   : -3
+	IpeakU  : -3
+	Title   : Digital Logic 5V
+<Term> Input, 2
+	InomU   : -3
+	IpeakU  : -3
+	Title   : Analog Logic 3V3
+<BPrt> Load, 33, 730, 350, MCU
+	Color   : #FFFFB6C1
+	Width   : 290
+	Height  : 80
+	VisType : 2
+<Term> Input, 1
+	Inom    : 100
+	InomU   : -3
+	Ipeak   : 200
+	IpeakU  : -3
+	Title   : Digital Supply 3.3V
+<BPrt> Load, 34, 730, 165, CP2012
+	Color   : #FFFFB6C1
+	Width   : 290
+	Height  : 70
+	VisType : 2
+<Term> Input, 1
+	Inom    : 9.5
+	InomU   : -3
+	IpeakU  : -3
+	Title   : Supply 5V
+<BPrt> Load, 37, 730, 30, op-amp
+	Color   : #FFFFB6C1
+	Width   : 290
+	Height  : 120
+	VisType : 2
+<Term> Input, 1
+	InomU   : -3
+	Ipeak   : 30
+	IpeakU  : -3
+	Title   : Op-Amp Pos 15
+<Term> Input, 2
+	InomU   : -3
+	Ipeak   : 30
+	IpeakU  : -3
+	LoadType: False
+	Title   : Op-Amp Neg 15
+<Symb> SummaryReport, 0, 0, 0, 0,0, 0,0
+	Thicknss: 24
+<Wire> 4, 3
+	ZIndex  : -1
+	STermPID: 2
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 1
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (390,280)(455,280)
+<Wire> 39, 38
+	ZIndex  : -1
+	STermPID: 1
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 37
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (595,230)(595,60)(730,60)
+<Wire> 41, 40
+	ZIndex  : -1
+	STermPID: 1
+	STermTyp: Output
+	STermNum: 2
+	ETermPID: 37
+	ETermTyp: Input
+	ETermNum: 2
+	Points  : (595,265)(635,265)(635,120)(730,120)
+<Wire> 43, 42
+	ZIndex  : -1
+	STermPID: 1
+	STermTyp: Output
+	STermNum: 3
+	EWires  : 44, 45
+	Points  : (595,295)(635,295)
+<Wire> 44, 42
+	ZIndex  : -1
+	STermPID: 32
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 43, 45
+	Points  : (730,265)(675,265)(675,295)(635,295)
+<Wire> 45, 42
+	ZIndex  : -1
+	ETermPID: 34
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 44, 43
+	Points  : (635,295)(655,295)(655,200)(730,200)
+<Wire> 47, 46
+	ZIndex  : -1
+	STermPID: 32
+	STermTyp: Input
+	STermNum: 2
+	EWires  : 48, 49
+	Points  : (730,315)(675,315)(675,330)
+<Wire> 48, 46
+	ZIndex  : -1
+	STermPID: 33
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 47, 49
+	Points  : (730,390)(675,390)(675,330)
+<Wire> 49, 46
+	ZIndex  : -1
+	ETermPID: 1
+	ETermTyp: Output
+	ETermNum: 4
+	SWires  : 48, 47
+	Points  : (675,330)(595,330)
